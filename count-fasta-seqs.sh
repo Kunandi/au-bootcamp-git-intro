@@ -96,5 +96,8 @@ echo "$@"
 
 # JAKE PUSHED FIRST!  HE DECLARES WAR ON ALL OTHER MEMBERS OF THIS GROUP!
 # JAKE PUSHES AGAIN!  A SECOND STRIKE!  
-
+# Iwo: This is really cool. I'm a bit rusty on for loops, and everything else.
+# Iwo: I'll review some things today, but probably won't be able to put much
+# effort into this until tomorrow
+ 
 sh run_tests.sh
