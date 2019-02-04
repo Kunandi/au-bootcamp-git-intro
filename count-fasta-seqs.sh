@@ -117,6 +117,7 @@
 
 cwd=$(pwd)
 
+#This doesn't yet appear to capture more than one file--what are you aiming for with these, in specific?  (So we can work together!)
 for cwd in "$@"
 do 
 	grep -c ">" "$@" && echo "$@"
