@@ -3,7 +3,6 @@
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
-#
 # OUTPUT:  For each file, it should write a line with the number of sequences
 #          in the file, a space, and then the file NAME (NOT the path!), and a
 #          final line with the total number of sequences across all files.
@@ -93,6 +92,15 @@ echo "$@"
 # Good luck!
 #
 # ADD YOUR CODE BELOW:
+cd /usr/bin/git-intro/homework/au-bootcamp-git-intro
+for filename in ./*.fasta
+do                   
+base_file_name= `/usr/bin/git-intro/homework/au-bootcamp-git-intro/basename $filename .fasta`
+grep -c ">" $filename >> ${base_file_name}.txt            
+printf "${base_file_name}.txt ${filename} \n"
+done
+
+exit
 
 # JAKE PUSHED FIRST!  HE DECLARES WAR ON ALL OTHER MEMBERS OF THIS GROUP!
 # JAKE PUSHES AGAIN!  A SECOND STRIKE!  
