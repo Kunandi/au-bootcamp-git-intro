@@ -100,6 +100,8 @@
 # Iwo: I'll review some things today, but probably won't be able to put much
 # effort into this until tomorrow
 # A wild Rattata appears!
+#KC: Loving the pokemon, going to be working this today :)
+#Golduck, go!
 
 #Commenting this out
 #sh run_tests.sh
