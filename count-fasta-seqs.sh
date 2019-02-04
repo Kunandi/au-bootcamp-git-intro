@@ -105,6 +105,7 @@
 #sh run_tests.sh
 
 #Rattata: ran this as a test..
+#...who would choose Rattata?  Are you going for an r-selected attack-approach?
 #wc -l  "$1"
 #wc -l  "$2"
 
