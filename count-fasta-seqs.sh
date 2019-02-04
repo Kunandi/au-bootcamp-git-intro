@@ -118,7 +118,15 @@
 cwd=$(pwd)
 
 #This doesn't yet appear to capture more than one file--what are you aiming for with these, in specific?  (So we can work together!)
-for cwd in "$@"
-do 
+#for cwd in "$@"
+#do 
+#	grep -c ">" "$@" && echo "$@"
+#done
+
+#I've commented those out in order to try another way--see below!
+
+#This is still afunctional, but I think we need to include both filenames in the for-loop.
+for args in example-seqs1.fasta example-seqs2.fasta
+do
 	grep -c ">" "$@" && echo "$@"
 done
