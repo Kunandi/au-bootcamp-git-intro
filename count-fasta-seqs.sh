@@ -130,3 +130,6 @@ for args in example-seqs1.fasta example-seqs2.fasta
 do
 	grep -c ">" "$@" && echo "$@"
 done
+
+# So then does "$@" refer to the paths for all files listed after the executable "sh" and this script file?
+# I am confused by Jamie's example output, the first line of which resembles an input 
