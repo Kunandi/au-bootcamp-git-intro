@@ -139,12 +139,16 @@ cwd=$(pwd)
 for FILE in "$@"
 do
 
-#	grep -c ">" "$@" && basename "$@" | echo
-	echo "$@"	
+	grep -c ">" "$@" && basename -a "$@" > "$@".txt
+	
 done
+##This script will work as well as previous, but it stil double repeats the information which i beleive is part of the usage of $@, i beleive there is another way, but unfortunately 
+##I cant remember, it also still does not total up the numbers as desried or output the information in the orientation he wants, this seems to be a built in portion of grep -c when multiple
+##files are referenced, i cant think of a way to total up the numbers with out setting variables as we go, but since the only option we have for referencing the file is $@ that wont work either
+## Anna H comments
 
 ##This will work but not how they want
 #for FILE in *.fasta
 #do
-#	grep -c ">" $FILE&&echo $FILE
+#	grep -c ">" $FILE && echo $FILE
 #done
