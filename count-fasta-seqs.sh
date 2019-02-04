@@ -99,5 +99,6 @@ echo "$@"
 # Iwo: This is really cool. I'm a bit rusty on for loops, and everything else.
 # Iwo: I'll review some things today, but probably won't be able to put much
 # effort into this until tomorrow
+# A wild Rattata appears!
  
 sh run_tests.sh
