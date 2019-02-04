@@ -63,7 +63,7 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-echo "$@"
+#echo "$@"
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -100,5 +100,14 @@ echo "$@"
 # Iwo: I'll review some things today, but probably won't be able to put much
 # effort into this until tomorrow
 # A wild Rattata appears!
- 
-sh run_tests.sh
+
+#Commenting this out
+#sh run_tests.sh
+
+#Rattata: ran this as a test..
+#wc -l  "$1"
+#wc -l  "$2"
+
+#This works but should be in loop form, and not sure how to get the file name on the same line as the grep output?
+grep -c ">" "$1" && echo "$1"
+grep -c ">" "$2" && echo "$2" 
