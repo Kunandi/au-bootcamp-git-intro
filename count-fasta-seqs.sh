@@ -110,8 +110,14 @@
 #wc -l  "$2"
 
 #This works but should be in loop form, and not sure how to get the file name on the same line as the grep output?
-grep -c ">" "$1" && echo "$1"
-grep -c ">" "$2" && echo "$2" 
+#grep -c ">" "$1" && echo "$1"
+#grep -c ">" "$2" && echo "$2" 
 
-echo "This is the output that Scott and Jamie want.  See?  It's right there in the first sentence.  We can all go home."
+#echo "This is the output that Scott and Jamie want.  See?  It's right there in the first sentence.  We can all go home."
 
+cwd=$(pwd)
+
+for cwd in "$@"
+do 
+	grep -c ">" "$@" && echo "$@"
+done
