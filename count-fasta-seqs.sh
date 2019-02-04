@@ -126,10 +126,25 @@ cwd=$(pwd)
 #I've commented those out in order to try another way--see below!
 
 #This is still afunctional, but I think we need to include both filenames in the for-loop.
-for args in example-seqs1.fasta example-seqs2.fasta
-do
-	grep -c ">" "$@" && echo "$@"
-done
+#for args in example-seqs1.fasta example-seqs2.fasta
+#do
+#	grep -c ">" "$@" && echo "$@"
+#done
 
 # So then does "$@" refer to the paths for all files listed after the executable "sh" and this script file?
 # I am confused by Jamie's example output, the first line of which resembles an input 
+
+
+##Anna's trial, I have hashed out the above semi-working script
+for FILE in "$@"
+do
+
+#	grep -c ">" "$@" && basename "$@" | echo
+	echo "$@"	
+done
+
+##This will work but not how they want
+#for FILE in *.fasta
+#do
+#	grep -c ">" $FILE&&echo $FILE
+#done
