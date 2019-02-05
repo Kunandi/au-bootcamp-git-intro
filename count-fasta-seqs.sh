@@ -92,6 +92,8 @@
 # Good luck!
 #
 # ADD YOUR CODE BELOW:
+
+# Sope added the cod below
 cd /usr/bin/git-intro/homework/au-bootcamp-git-intro
 for filename in ./*.fasta
 do                   
