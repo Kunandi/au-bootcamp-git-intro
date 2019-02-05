@@ -156,9 +156,9 @@
 #done
 
 #Iwo takes a whack.
-#I can't figure out how the compute the expr line. Both of my "do" expressions worl the same.
-#for i in "$@"
-#do grep -c ">" $i && basename $i
-#do basename $i && grep -c ">" $i
-#done
+#I can't figure out how to compute the expr line.
+#Fixed a small error
+for i in "$@"
+do grep -c ">" $i && basename --suffix=.fasta $i
+done
 
