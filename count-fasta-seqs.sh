@@ -172,3 +172,4 @@ for i in "$@"
 do grep -c ">" $i && basename --suffix=.fasta $i
 done
 
+sh run_tests.sh
