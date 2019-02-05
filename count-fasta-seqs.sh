@@ -99,7 +99,7 @@ for filename in ./*.fasta
 do                   
 base_file_name= `/usr/bin/git-intro/homework/au-bootcamp-git-intro/basename $filename .fasta`
 grep -c ">" $filename >> ${base_file_name}.txt            
-printf "${base_file_name}.txt ${filename} \n"
+printf "Creating ${base_file_name}.txt from ${filename} \n"
 done
 
 exit
