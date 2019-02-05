@@ -117,7 +117,7 @@
 
 #echo "This is the output that Scott and Jamie want.  See?  It's right there in the first sentence.  We can all go home."
 
-cwd=$(pwd)
+#cwd=$(pwd)
 
 #This doesn't yet appear to capture more than one file--what are you aiming for with these, in specific?  (So we can work together!)
 #for cwd in "$@"
@@ -131,19 +131,19 @@ cwd=$(pwd)
 #for args in example-seqs1.fasta example-seqs2.fasta
 #do
 #	grep -c ">" "$@" && echo "$@"
-#done
+#doe
 
 # So then does "$@" refer to the paths for all files listed after the executable "sh" and this script file?
 # I am confused by Jamie's example output, the first line of which resembles an input 
 
 
 ##Anna's trial, I have hashed out the above semi-working script
-for FILE in "$@"
-do
+#for FILE in "$@"
+#do
 
-	grep -c ">" "$@" && basename -a "$@" > "$@".txt
-	
-done
+#	grep -c ">" "$@" && basename -a "$@" > "$@".txt
+#	
+#done
 ##This script will work as well as previous, but it stil double repeats the information which i beleive is part of the usage of $@, i beleive there is another way, but unfortunately 
 ##I cant remember, it also still does not total up the numbers as desried or output the information in the orientation he wants, this seems to be a built in portion of grep -c when multiple
 ##files are referenced, i cant think of a way to total up the numbers with out setting variables as we go, but since the only option we have for referencing the file is $@ that wont work either
@@ -154,3 +154,11 @@ done
 #do
 #	grep -c ">" $FILE && echo $FILE
 #done
+
+#Iwo takes a whack.
+#I can't figure out how the compute the expr line. Both of my "do" expressions worl the same.
+#for i in "$@"
+#do grep -c ">" $i && basename $i
+#do basename $i && grep -c ">" $i
+#done
+
